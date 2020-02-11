@@ -44,7 +44,7 @@ router.post('/upLike', (req, res) => {
   if(req.body.videoId){
     variable = { videoId: req.body.videoId, userId: req.body.userId }
   } else {
-    variable = { commentId: req.body.commentId, userId: }
+    variable = { commentId: req.body.commentId, userId: "" }
   }
   const like = new Like(variable)
   //save the link information data in mongoDB

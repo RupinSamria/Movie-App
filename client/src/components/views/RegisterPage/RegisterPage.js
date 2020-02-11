@@ -74,7 +74,7 @@ function RegisterPage(props) {
             }
           })
 
-          setSubmitting)(false);
+          setSubmitting(false);
         }, 500);
       }}
     >
@@ -175,3 +175,5 @@ function RegisterPage(props) {
     </Formik>
   );
 };
+
+export default RegisterPage
